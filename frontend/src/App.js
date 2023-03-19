@@ -18,10 +18,6 @@ const Layout = () => {
 };
 
 const router = createBrowserRouter([
-  // {
-  //   path: "*",
-  //   element: <span>404 | Error</span>
-  // },
   {
     path: "/",
     element: <Layout />,

@@ -1,8 +1,8 @@
 import React from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineOutlined from "@mui/icons-material/PersonOutlineOutlined";
-import FavoriteBorderOutlined from "@mui/icons-material/FavoriteBorderOutlined";
+// import SearchIcon from "@mui/icons-material/Search";
+// import FavoriteBorderOutlined from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from 'react-router-dom';
 import "./Navbar.scss";
@@ -43,19 +43,19 @@ const Navbar = () => {
                     <div className="item">
                         <Link className="link" to="/">Homepage</Link>
                     </div>
-                    <div className="item">
+                    {/* <div className="item">
                         <Link className="link" to="/">About</Link>
-                    </div>
+                    </div> */}
                     <div className="item">
                         <Link className="link" to="/">Contact</Link>
                     </div>
                     <div className="item">
-                        <Link className="link" to="/">Stores</Link>
+                        <Link className="link" to="/">Outlets</Link>
                     </div>
                     <div className="icons">
-                        <SearchIcon />
+                        {/* <SearchIcon /> */}
                         <PersonOutlineOutlined />
-                        <FavoriteBorderOutlined />
+                        {/* <FavoriteBorderOutlined /> */}
                         <div className="cartIcon">
                             <ShoppingCartOutlined />
                             <span>0</span>
