@@ -22,7 +22,9 @@ const Layout = () => {
         <span>Sorry for the inconvenience!</span>
         <span>This site is currently available for screen width of more than 1440px.</span>
         <br />
-        <span>In the meantime, visit my GitHub repo <Link className="link" style={{ textDecoration: "underline" }} to="https://github.com/CERTIFIED2003">@CERTIFIED2003</Link></span>
+        <span>In the meantime, star this project on{` `}
+          <Link className="link" style={{ textDecoration: "underline" }} to="https://github.com/CERTIFIED2003/ECommerce-Site-v1">Github</Link>
+        </span>
       </div>
     </>
   )
