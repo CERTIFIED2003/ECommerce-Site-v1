@@ -20,8 +20,9 @@ const Slider = () => {
     };
 
     setTimeout(() => {
-        setCurrentSlide(currentSlide === data.length - 1 ? 0 : (prev) => prev + 1);
-    }, 5000);
+        if (currentSlide === data.length - 1) setCurrentSlide(0);
+        setCurrentSlide(prev => prev + 1);
+    }, 10000);
 
     return (
         <div className="slider">

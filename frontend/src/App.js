@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet, Link } from "react-router-dom";
 import { Footer } from "./components";
 import { Navbar } from "./components"
 import Home from "./pages/Home/Home";
@@ -8,12 +8,20 @@ import "./App.scss";
 
 const Layout = () => {
   return (
-    <div className="app">
-      <Navbar />
-      <div style={{ marginBottom: "80px" }} />
-      <Outlet />
-      <Footer />
-    </div>
+    <>
+      <div className="app">
+        <Navbar />
+        <div style={{ marginBottom: "80px" }} />
+        <Outlet />
+        <Footer />
+      </div>
+      <div className="mob">
+        <span>Sorry for the inconvenience!</span>
+        <span>This site is currently available for screen width of more than 1440px.</span>
+        <br />
+        <span>In the meantime, visit my GitHub repo <Link className="link" style={{ textDecoration: "underline" }} to="https://github.com/CERTIFIED2003">@CERTIFIED2003</Link></span>
+      </div>
+    </>
   )
 };
 

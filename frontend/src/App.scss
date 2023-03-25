@@ -1,12 +1,30 @@
 .app {
     cursor: default;
 
-    .link {
-        color: inherit;
-        text-decoration: none;
+    @media (max-width: 1440px) {
+        display: none;
     }
+}
 
-    // .link:hover {
-    //     color: #2879FE;
-    // }
+.mob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    color: #2879FE;
+
+    @media (min-width: 1440px) {
+        display: none;
+    }
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
 }
