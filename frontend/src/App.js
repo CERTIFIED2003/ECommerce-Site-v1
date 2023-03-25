@@ -16,6 +16,9 @@ const Layout = () => {
         <Footer />
       </div>
       <div className="mob">
+        <div className="center">
+          CERTYSTORE
+        </div>
         <span>Sorry for the inconvenience!</span>
         <span>This site is currently available for screen width of more than 1440px.</span>
         <br />
