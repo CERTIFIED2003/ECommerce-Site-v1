@@ -4,6 +4,7 @@ import "./FeaturedProducts.scss";
 import useFetch from '../../hooks/useFetch';
 
 const FeaturedProducts = ({ type }) => {
+    // eslint-disable-next-line
     const { data, loading, error } = useFetch(`/products?populate=*&[filters][type][$eq]=${type}`);
 
     return (

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import List from '../../components/List/List';
 import useFetch from '../../hooks/useFetch';
@@ -13,6 +13,7 @@ const Products = () => {
   const [displayB, setDisplayB] = useState(false);
   const [apply, setApply] = useState(false);
 
+  // eslint-disable-next-line
   const { data, loading, error } = useFetch(`/sub-categories?[filters][categories][id][$eq]=${catId}`);
 
   const handleChange = (e) => {
