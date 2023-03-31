@@ -12,19 +12,19 @@ const Categories = () => {
                         alt="sale"
                     />
                     <button>
-                        <Link className="link" to="/products/1">
+                        <Link className="link" to="/products/4">
                             Sale
                         </Link>
                     </button>
                 </div>
                 <div className="row">
                     <img
-                        src="https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                        alt="women"
+                        src="https://images.pexels.com/photos/2703202/pexels-photo-2703202.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="accessories"
                     />
                     <button>
-                        <Link to="/products/2" className="link">
-                            Women
+                        <Link to="/products/5" className="link">
+                            Accessories
                         </Link>
                     </button>
                 </div>
@@ -37,7 +37,7 @@ const Categories = () => {
                         alt="new-season"
                     />
                     <button>
-                        <Link to="/products/3" className="link">
+                        <Link to="/products/6" className="link">
                             New Season
                         </Link>
                     </button>
@@ -52,7 +52,7 @@ const Categories = () => {
                                 alt="men"
                             />
                             <button>
-                                <Link to="/products/4" className="link">
+                                <Link to="/products/1" className="link">
                                     Men
                                 </Link>
                             </button>
@@ -62,12 +62,12 @@ const Categories = () => {
                         <div className="row">
                             {" "}
                             <img
-                                src="https://images.pexels.com/photos/2703202/pexels-photo-2703202.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                alt="accessories"
+                                src="https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt="women"
                             />
                             <button>
-                                <Link to="/products/5" className="link">
-                                    Accessories
+                                <Link to="/products/2" className="link">
+                                    Women
                                 </Link>
                             </button>
                         </div>
@@ -79,7 +79,7 @@ const Categories = () => {
                         alt="shoes"
                     />
                     <button>
-                        <Link to="/products/6" className="link">
+                        <Link to="/products/3" className="link">
                             Shoes
                         </Link>
                     </button>
