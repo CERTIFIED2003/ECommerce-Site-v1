@@ -34,7 +34,6 @@ const Cart = () => {
             console.log(error);
         }
     };
-    console.log(products);
 
     return (
         <div className="cart">
