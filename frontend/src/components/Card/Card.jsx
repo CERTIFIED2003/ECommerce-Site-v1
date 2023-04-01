@@ -22,10 +22,10 @@ const Card = ({ item }) => {
                 </h2>
                 <div className="prices">
                     <h3>
-                        ${item.oldPrice || item?.attributes.price}
+                        ₹{item.oldPrice || item?.attributes.price}
                     </h3>
                     <h3>
-                        ${item?.attributes.price}
+                        ₹{item?.attributes.price}
                     </h3>
                 </div>
             </div>
