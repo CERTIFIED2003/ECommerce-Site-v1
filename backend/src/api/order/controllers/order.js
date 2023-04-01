@@ -17,13 +17,13 @@ module.exports = createCoreController('api::order.order', ({ strapi }) => ({
                     const item = await strapi
                         .service("api::product.product")
                         .findOne(product.id, { populate: ["img"] });
-                    const productImg = "https://certystore-v1.pages.dev" + item.img.url;
+                    const productImg = "https://raw.githubusercontent.com/CERTIFIED2003/ECommerce-Site-v1/main/frontend/public";
                     return {
                         price_data: {
                             currency: "inr",
                             product_data: {
                                 name: item.title,
-                                images: [productImg],
+                                images: [productImg + item.img.url],
                             },
                             unit_amount: Math.round(item.price * 100),
                         },
